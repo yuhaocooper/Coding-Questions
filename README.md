@@ -2,7 +2,7 @@
 Codes of coding questions I've completed
 
 Format:
-[Title][Portal][Difficulty]
+[Title]_[Portal]_[Difficulty]
 
 'Title' - title of each commit is the title of the question from the respective portal
 
