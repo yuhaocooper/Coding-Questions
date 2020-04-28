@@ -1,6 +1,11 @@
 # Coding-Questions
 Codes of coding questions I've completed
 
-'Projects' are used to separate questions from different portals such as Codewars, LeetCode, HackerRank and etc.
+Format:
+[Title][Portal][Difficulty]
 
-'Title' of each commit is the title of the question from the respective portal
+'Title' - title of each commit is the title of the question from the respective portal
+
+'Portal' - name of portal which the question is taken from. For example, LeetCode, HackerRank and Codewars
+
+'Difficulty' - The difficulty of the questions as per the portal
