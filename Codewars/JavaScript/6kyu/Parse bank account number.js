@@ -63,4 +63,3 @@ function parseBankAccount(bankAccount) {
   //1 or 4
   //function numbercheck(a,b,c){
     //row a,b,c = row 1,2,3
-    

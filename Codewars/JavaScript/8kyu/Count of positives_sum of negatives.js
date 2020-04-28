@@ -12,7 +12,7 @@ function countPositivesSumNegatives(input) {
         count++
       }
       else {
-        negativesum += input[i] 
+        negativesum += input[i]
       }
     }
     array.push(count,negativesum)
