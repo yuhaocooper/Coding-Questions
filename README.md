@@ -1,11 +1,6 @@
 # Coding-Questions
 Codes of coding questions I've completed
 
-Format:
-[Title]\_\[Portal]\_\[Difficulty]
+*CodeWars* - Current rank: 4kyu
 
-'Title' - title of each commit is the title of the question from the respective portal
-
-'Portal' - name of portal which the question is taken from. For example, LeetCode, HackerRank and Codewars
-
-'Difficulty' - The difficulty of the questions as per the portal
+Difficulty and rank wiki: https://github.com/Codewars/codewars.com/wiki/Honor-&-Ranks
