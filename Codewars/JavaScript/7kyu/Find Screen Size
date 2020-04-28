@@ -1,0 +1,6 @@
+function findScreenHeight(width, ratio) {
+   var ratios = ratio.match(/\d+/g)
+   var height = (width/ratios[0])*ratios[1]
+   return width+'x'+height
+   
+}
