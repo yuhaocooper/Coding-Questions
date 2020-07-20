@@ -4,7 +4,6 @@ function decomp(n) {
   var temp = []
   var result = []
   for (var i = 2; i<n+1;i++){
-    //console.log(i)
     //Code on all the even numbers
     if (i % 2 ==0){
       var x = 0;
@@ -15,7 +14,7 @@ function decomp(n) {
           temp.push(primes[x])
         }
         else{
-          z = z * primes[x]
+          z = Math.round(z * primes[x])
           x ++
         }
       }
@@ -31,15 +30,16 @@ function decomp(n) {
           temp.push(primes[x])
         }
         else{
-          z = z * primes[x]
+          z = Math.round(z * primes[x])
           x ++
           if (x > primes.length - 1){
-            primes.push(Math.round(z))
+            primes.push(z)
           }
         }
       }
     }
   }
+  //filter the count of number to store as string and push to result arr
   for (var i = 0; i<primes.length; i++){
     var count = temp.filter( num => num == primes[i]).length
     if (count > 1){
