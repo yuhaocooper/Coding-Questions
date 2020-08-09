@@ -21,7 +21,7 @@ var theLift = function(queues, capacity) {
         queue = temp.slice()
         //Rule for boarding the lift
         queues[i].forEach( (num,index,arr) => {
-          if (queue.length <= capacity && num > i){
+          if (queue.length < capacity && num > i){
             queue.push(num)
             arr[index] = 'boarded'
           }
@@ -49,7 +49,7 @@ var theLift = function(queues, capacity) {
         queue = temp.slice()
         //Rule for boarding the lift
         queues[i].forEach( (num,index,arr) => {
-          if (queue.length <= capacity && num < i){
+          if (queue.length < capacity && num < i){
             queue.push(num)
             arr[index] = 'boarded'
           }
