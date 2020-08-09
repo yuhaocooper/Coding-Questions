@@ -7,10 +7,10 @@ var theLift = function(queues, capacity) {
   //function to edit the order depending on the people and the queues
   function up(queues,capacity,result,start){
     console.log(queues)
-    console.log(capacity)
     for (var i = 0; i<queues.length;i++){
       if (queues[i].length != 0 || (queue.indexOf(i) != -1 && queue.length != 0) ){
-        if(result[result.length-1] == i || (queues[i].filter(x =>x>i).length == 0 && queues[i].length >0) ) {}
+        if(result[result.length-1] == i || 
+           (queues[i].filter(x =>x>i).length == 0 && queues[i].length >0 && queue.filter(x=>x==i).length ==0)) {}
         else {result.push(i)}
         var temp = queue.slice()
         for (var x = 0; x< queue.length;x++){
@@ -37,7 +37,8 @@ var theLift = function(queues, capacity) {
   function down(queues,capacity,result,start){
     for (var i = start; i>=0;i--){
       if (queues[i].length != 0 || (queue.indexOf(i) != -1 && queue.length != 0) ){
-        if(result[result.length-1] == i || (queues[i].filter(x =>x<i).length == 0 && queues[i].length >0) ) {}
+        if(result[result.length-1] == i ||
+           (queues[i].filter(x =>x<i).length == 0 && queues[i].length >0 && queue.filter(x=>x==i).length ==0)) {}
         else {result.push(i)}
         var temp = queue.slice()
         for (var x = 0; x< queue.length;x++){
