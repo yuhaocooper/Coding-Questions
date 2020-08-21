@@ -1,0 +1,4 @@
+function digPow(n, p){
+  var arr = n.toString().split('').map(x => Number(x)).reduce((a,b,c) => {return a + b**(c+p)},0)
+  return arr % n == 0 ? arr/n : -1
+}
